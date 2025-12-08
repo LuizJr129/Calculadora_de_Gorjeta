@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Gorjeta</title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex-container">
+    <script src="index.js"></script>
+
+    <div>
+      <h1>Calculadora de gorjeta</h1>
+      <form onsubmit="calcular(event)">
+        <div>
+          <h5>Valor da refeição</h5>
+          <input
+            type="number"
+            name="valor"
+            id="valor"
+            placeholder="Digite o valor da refeição"
+            required
+          />
+        </div>
+        <div>
+          <h5>Porcentagem da gorjeta</h5>
+          <input
+            type="number"
+            name="Porcentagem"
+            id="Porcentagem"
+            placeholder="Digite a porcentagem da gorjeta"
+            minlength="1"
+            required
+          />
+        </div>
+        <p></p>
+        <button type="submit">Calcular</button>
+      </form>
+    </div>
+    <div>
+      <span>
+        <h3>Pagamento total é de:</h3>
+        <p id="valorTotal">R$ VALOR</p>
+        <div class="flex-container">
+          <div>
+            <h6>Valor da gorjeta</h6>
+            <p id="gorjeta">ValorGorjeta</p>
+          </div>
+          <div>
+            <h6>Valor original</h6>
+            <p id="valorOriginal">ValorTotal</p>
+          </div>
+        </div>
+      </span>
+    </div>
+  </body>
+</html>
