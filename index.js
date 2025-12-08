@@ -13,6 +13,8 @@ function calcular(event) {
   let valorGorjeta = (valorInserir / 100) * porcentagemInserir;
 
   gorjeta.textContent = `R$ ${valorGorjeta.toFixed(2)}`;
-  valorOutput.textContent = `R$ ${valorInserir}`;
+  valorOutput.textContent = `R$ ${(
+    Number(valorInserir) + Number(valorGorjeta)
+  ).toFixed(2)}`;
   valorOutput2.textContent = `R$ ${valorInserir}`;
 }

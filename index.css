@@ -2,51 +2,105 @@
   font-family: "Edu NSW ACT Hand Pre", cursive;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: #232323;
-  color: #fff;
-  stroke: #424242;
+  padding: 0;
+  margin: 0;
 }
 
-.h1 {
+h1 {
   size: 4rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.h2 {
+h2 {
   size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.p {
+p,
+span,
+h3 {
   size: 1rem;
-  font-weight: medium;
-}
-
-span {
-  size: 1rem;
-  font-weight: medium;
-  background-color: #2e2e2e;
+  font-weight: 500;
 }
 
 .small {
   size: 0.875rem;
-  font-weight: Regular;
+  font-weight: 400;
 }
 
 input {
   background: #2e2e2e;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #424242;
+  color: #fff;
+  width: 30ch;
+}
+
+.card {
+  background: #2e2e2e;
+  padding: 3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #424242;
+}
+
+.align-center {
+  align-items: center;
 }
 
 button {
   background-color: #1c7ed6;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 text {
   color: #c9c9c9;
 }
 
-.flex-container {
+body {
   display: flex;
   justify-content: space-between;
   padding: 5%;
+  background-color: #232323;
+  color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+  .card {
+    margin-top: 4rem;
+  }
 }
