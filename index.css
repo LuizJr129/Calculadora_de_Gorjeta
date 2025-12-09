@@ -14,6 +14,11 @@ h1 {
 h2 {
   size: 3rem;
   font-weight: 700;
+  color: #fff;
+}
+
+label {
+  color: #fff;
 }
 
 p,
@@ -29,19 +34,20 @@ h3 {
 }
 
 input {
-  background: #2e2e2e;
+  background: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  border: 1px solid #424242;
-  color: #fff;
+  border: 1px solid #fff;
+  color: black;
+  font-weight: 500;
   width: 30ch;
 }
 
 .card {
-  background: #2e2e2e;
+  background: #fff;
   padding: 3rem;
   border-radius: 0.25rem;
-  border: 1px solid #424242;
+  border: 1px solid #fff;
 }
 
 .align-center {
@@ -65,8 +71,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5%;
-  background-color: #232323;
-  color: #fff;
+  background-color: rgb(79, 79, 240);
+  color: black;
   max-width: 800px;
   margin: auto;
 }
